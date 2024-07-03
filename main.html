@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header>
+        <h1 role="heading">John Doe's Portfolio</h1>
+    </header>
+    
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <section id="about">
+        <img src="profile.jpg" alt="John Doe's Profile Picture" role="img">
+        <p>Hello! I'm John Doe, a web developer specializing in accessible and user-friendly web design. Welcome to my portfolio!</p>
+    </section>
+
+    <section id="projects">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project One: A responsive website for a local business.</li>
+            <li role="listitem">Project Two: An e-commerce platform with an accessible design.</li>
+            <li role="listitem">Project Three: A personal blog with a focus on inclusive content.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <h2 role="heading">Contact</h2>
+        <p>Feel free to reach out via email: <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+    </footer>
 </body>
-
 </html>
